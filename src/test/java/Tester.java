@@ -50,4 +50,26 @@ public class Tester {
    }
 
 
+
+    public String encryptMessage(String message, int numCols, int numRows)
+    {
+        int sLength = numCols*numRows;
+        StringBuilder out= new StringBuilder();
+        int index = 0;
+        while (index +  sLength< message.length()){
+            fillBlock(message.substring(index, index+6));
+            out.append(encryptBlock());
+            index+=sLength;
+        }
+        if (index < message.length()) {
+            fillBlock(message.substring(index));
+            out.append(encryptBlock());
+        }
+
+        //fillBlock(message);
+        return out.toString();//encryptBlock();
+        /* to be implemented in part (b) */
+    }
+
+
 }
