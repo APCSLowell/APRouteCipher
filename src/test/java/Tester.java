@@ -30,7 +30,7 @@ public class Tester {
    public void tooShort(){
       String result;
       RouteCipher cipher = new RouteCipher(2,4);
-      result = cipher.encryptMessage("dog");
+      result = cipher.encryptMessage("dAoAgAAA");
    }
 
 
