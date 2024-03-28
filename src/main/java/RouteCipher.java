@@ -13,7 +13,7 @@ private int numCols;
 * if str.length() < numRows * numCols, "A" is placed in each unfilled cell
 * if str.length() > numRows * numCols, trailing characters are ignored
 */
-private void fillBlock(String str)
+public void fillBlock(String str)
 { /* to be implemented in part (a) */ }
 /** Extracts encrypted string from letterBlock in column-major order.
 * Precondition: letterBlock has been filled
